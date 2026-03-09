@@ -1,0 +1,129 @@
+body {
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+
+  /* The higher the 0.96 value, the more 'faded' the image looks */
+  background-image:
+    linear-gradient(rgba(248, 249, 250, 0.4), rgba(248, 249, 250, 0.4)),
+    url("images/multi-storey-car-park.jpg");
+
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+/* Sidebar Fixes */
+.sidebar {
+  background-color: #343a40 !important; /* Ensure background shows over Bootstrap defaults */
+  min-height: 100vh;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.sidebar .nav-link {
+  color: #ced4da;
+  margin-bottom: 5px;
+  transition: all 0.3s ease;
+}
+
+.sidebar .nav-link:hover {
+  background-color: #495057;
+  color: #fff !important;
+  border-radius: 4px;
+}
+
+/* Active Sidebar Link */
+.sidebar .nav-link.active {
+  background-color: #fafafa !important;
+  color: #000 !important;
+  font-weight: bold;
+}
+
+/* Topbar Styles */
+.topbar {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(5px); /* Modern frosted glass look */
+  border-bottom: 1px solid #dee2e6;
+}
+/* Content Area & Cards */
+.content-area {
+  animation: fadeIn 0.6s ease-in;
+  padding-top: 20px;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons */
+.btn-dark {
+  background-color: #343a40;
+  border-color: #343a40;
+  transition: 0.3s;
+}
+.btn-dark:hover {
+  background-color: #495057;
+  border-color: #495057;
+}
+
+/* Forms */
+.form-control {
+  border-radius: 6px;
+}
+
+/* Table Hover */
+.table-hover tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+/* Fade-in animation */
+.content-area {
+  animation: fadeIn 0.6s ease-in;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* Active Sidebar Link */
+.sidebar .nav-link.active {
+  background-color: #ffc107;
+  color: #000 !important;
+  border-radius: 4px;
+}
+
+/* Better mobile sidebar */
+@media (max-width: 768px) {
+  .sidebar {
+    min-height: auto;
+  }
+}
+
+/* Content spacing fix */
+main {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.Welcome {
+  color: black;
+  text-align: center;
+}
